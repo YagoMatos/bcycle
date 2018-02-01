@@ -7,6 +7,7 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 list: action.payload.data
             }
+        case '' :
         default:
             return state
     }
