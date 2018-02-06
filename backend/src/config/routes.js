@@ -1,13 +1,30 @@
 const express = require('express')
+const auth = require('./auth')
 
 module.exports = function(server){
     
-    // URL base to all routes
-    const router = express.Router()
-    server.use('/api', router)
+    /*
+    *
+    */
+    //// Private and Protect by JWT routes Access ////
+    const protectedApi = express.Router()
+    server.use('/api', protectedApi)
+
+    protectedApi.use(auth)
 
     //map routes about Pay Cycle
     const BilliCycle = require('../api/billingCycle/billingCycleService')
-    BilliCycle.register(router, '/billingCycles')
+    BilliCycle.register(protectedApi, '/billingCycles')
 
+    /*
+    *
+    */
+    //// Public routes Access ////
+    const openApi = express.Router()
+    server.use('/oapi', openApi)
+
+    const AuthService = require('../api/user/authService')
+    openApi.post('/login', AuthService.login)
+    openApi.post('/signup', AuthService.signup)
+    openApi.post('/validateToken', AuthService.validationToken)
 }
