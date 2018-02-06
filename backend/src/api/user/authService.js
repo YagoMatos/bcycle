@@ -49,7 +49,7 @@ const login = (req, resp, next) => {
 
 
 //validating token
-const validationToken = (req, resp, next) => {
+const validateToken = (req, resp, next) => {
     const token = req.body.token || ''
 
     jwt.verify(token, env.authSecret, function (err, decoded) {
@@ -77,9 +77,7 @@ const signup = (req, resp, next) => {
     if (!password.match(passwordRegex)) {
         return resp.status(400).send({
             errors: [
-                "A Senha precisa ter: " +
-                + " uma letra maiuscula, uma letra minuscula" +
-                + "um número, um caracter especial(@#$) e tamanho entre 6-20"
+                "A Senha precisa ter: uma letra maiuscula, uma letra minuscula um número, um caracter especial(@#$) e tamanho entre 6-20"
             ]
         })
     }
@@ -117,4 +115,4 @@ const signup = (req, resp, next) => {
 
 }
 
-module.exports = { login, signup, validationToken }
+module.exports = { login, signup, validateToken }
