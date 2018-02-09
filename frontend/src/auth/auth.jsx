@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-
 import { login, signup } from './authActions'
+
 import Row from '../common/layout/grid/row'
 import Grid from '../common/layout/grid/grid'
 import If from '../common/operador/if'
@@ -29,13 +29,12 @@ class Auth extends Component {
     render() {
         const { loginMode } = this.state
         const { handleSubmit } = this.props
-        return (
 
+        return (
             <div className="login-box">
                 <div className="login-logo"><b> My</b> Money</div>
                 <div className="login-box-body">
                     <p className="login-box-msg">Bem vindo!</p>
-
                     <form onSubmit={handleSubmit(v => this.onSubmit(v))}>
 
                         <Field component={Input} type="input" name="name"
@@ -61,12 +60,10 @@ class Auth extends Component {
 
                     </form>
                     <br />
-
                     <a onClick={() => this.changeMode()}>
                         {loginMode ? 'Novo usuário? Registrar aqui!' :
                             'Já é cadastrado? Entrar aqui!'}
                     </a>
-
                 </div>
                 <Messages />
             </div>

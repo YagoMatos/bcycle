@@ -6,30 +6,18 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        //dislogged or token expires
         case 'TOKEN_VALIDATED':
-            if (action.payload){
-                return {
-                    ...state,
-                    validToken: true
-                } 
+            if (action.payload) {
+                return { ...state, validToken: true }
             } else {
                 localStorage.removeItem(userKey)
-                return {
-                    ...state,
-                    validToken: false,
-                    user: null
-                }
+                return { ...state, validToken: false, user: null }
             }
-        //logged and authenticated
+
         case 'USER_FETCHED':
             localStorage.setItem(userKey, JSON.stringify(action.payload))
-            return {
-                ...state,
-                user: action.payload,
-                validToken: true
-            }
-        
+            return { ...state, user: action.payload, validToken: true }
+            
         default:
             return state
     }
