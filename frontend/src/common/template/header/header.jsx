@@ -5,10 +5,10 @@ export default props => (
     <header className='main-header'>
     
         <a href="/#/" className='logo'>
-            <span className='logo-mini'><b>My</b>M</span>
+            <span className='logo-mini'><b>B</b>C</span>
             <span className='logo-lg'> 
-                <i className='fa fa-money'></i>&nbsp;
-                <b>My</b> Money
+                <i className='fa fa-circle-o-notch'></i>&nbsp;
+                <b>B</b> Cycle
             </span>
         </a>
         
