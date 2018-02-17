@@ -1,9 +1,45 @@
 .wrapper {
-    background-color: #fff!important;
+  width: 100%;
+  height: 100vh;
+  background: url("../common/images/back.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .login-box-body {
-    background-color: #eee;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
 }
+
+.login-box-msg{
+  color: #2196F3;
+  font-size: 1.5em;
+}
+
+.login-logo{
+  color: #fff;
+}
+
+.login-signup{
+  display: flex;
+  justify-content: center;
+
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group{
+  margin-bottom: 40px;
+}
+
+.register-box {
+  width: 500px;
+}
+
 .login-box button {
     margin-left: 0px;
  }

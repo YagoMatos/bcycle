@@ -12,7 +12,6 @@ export default props => (
         <div className='content-wrapper'>
             {props.children}
         </div>
-        <Footer/>
         <Messages />
     </div>
 )

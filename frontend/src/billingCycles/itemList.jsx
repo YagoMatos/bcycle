@@ -36,17 +36,17 @@ class ItemList extends Component {
                 </If>
 
                 <td>
-                    <button type='button' className='btn btn-success'
+                    <button type='button' className='btn btn-success cycle'
                         onClick={() => this.add(index + 1)}>
                         <i className="fa fa-plus"></i>
                     </button>
 
-                    <button type='button' className='btn btn-warning'
+                    <button type='button' className='btn btn-warning cycle'
                         onClick={() => this.add(index + 1, item)}>
                         <i className="fa fa-clone"></i>
                     </button>
 
-                    <button type='button' className='btn btn-danger'
+                    <button type='button' className='btn btn-danger cycle'
                         onClick={() => this.remove(index)}>
                         <i className="fa fa-trash-o"></i>
                     </button>

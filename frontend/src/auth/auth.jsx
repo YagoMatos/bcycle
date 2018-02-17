@@ -31,10 +31,11 @@ class Auth extends Component {
         const { handleSubmit } = this.props
 
         return (
+
             <div className="login-box">
-                <div className="login-logo"><b> My</b> Money</div>
+                <div className="login-logo"><b> B</b> CYCLE</div>
                 <div className="login-box-body">
-                    <p className="login-box-msg">Bem vindo!</p>
+                    <p className="login-box-msg">BEM VINDO!</p>
                     <form onSubmit={handleSubmit(v => this.onSubmit(v))}>
 
                         <Field component={Input} type="input" name="name"
@@ -49,21 +50,28 @@ class Auth extends Component {
                         <Field component={Input} type="password" name="confirm_password"
                             placeholder="Confirmar Senha" icon='lock' hide={loginMode} />
 
+                        <div className="login-enter">
                         <Row>
                             <Grid cols="4">
-                                <button type="submit"
-                                    className="btn btn-primary btn-block btn-flat">
-                                    {loginMode ? 'Entrar' : 'Registrar'}
-                                </button>
+                                
+                                    <button type="submit"
+                                        className="btn btn-primary btn-block btn-flat">
+                                        {loginMode ? 'Entrar' : 'Registrar'}
+                                    </button>
+
                             </Grid>
                         </Row>
+                        </div>
 
                     </form>
                     <br />
-                    <a onClick={() => this.changeMode()}>
-                        {loginMode ? 'Novo usuário? Registrar aqui!' :
-                            'Já é cadastrado? Entrar aqui!'}
-                    </a>
+                    <div className="login-signup">
+                        <a onClick={() => this.changeMode()}>
+                            {loginMode ? 'Novo usuário? Registrar aqui!' :
+                                'Já é cadastrado? Entrar aqui!'}
+                        </a>
+                    </div>
+                    
                 </div>
                 <Messages />
             </div>
