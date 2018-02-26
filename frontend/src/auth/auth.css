@@ -4,7 +4,9 @@
   background: url("../common/images/back.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  overflow:visible!important;
 }
+
 .login-box-body {
     background-color: #fff;
     border-radius: 3px;
