@@ -25,14 +25,14 @@ class ItemList extends Component {
         return list.map((item, index) =>(
             <tr key={index}>
                 <td><Field name={`${this.props.field}[${index}].name`} component={Input}
-                    placeholder='Informe o nome' readOnly={this.props.readOnly}/></td>
+                    placeholder='Nome' readOnly={this.props.readOnly}/></td>
 
                 <td><Field name={`${this.props.field}[${index}].value`} component={Input}
-                    placeholder='Informe o valor' readOnly={this.props.readOnly} /></td>
+                    placeholder='Valor' readOnly={this.props.readOnly} /></td>
 
                 <If test={this.props.showStatus}>
                     <td><Field name={`${this.props.field}[${index}].status`} component={Input}
-                        placeholder='Informe o status' readOnly={this.props.readOnly} /></td>            
+                        placeholder='Status' readOnly={this.props.readOnly} /></td>            
                 </If>
 
                 <td>

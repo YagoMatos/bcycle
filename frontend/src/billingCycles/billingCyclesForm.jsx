@@ -27,11 +27,11 @@ class BillingCyclesForm extends Component {
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
                     <Field name='name' component={LabelAndInput} readOnly={readOnly}
-                        label='Nome' cols='12 4' placeholder='Informe o Nome'/>
+                        label='Nome' cols='12 4' placeholder='Nome'/>
                     <Field name='month' component={LabelAndInput} readOnly={readOnly} 
-                    type='number' label='Mês' cols='12 4' placeholder='Informe o Mês' />
+                    type='number' label='Mês' cols='12 4' placeholder='Mês' />
                     <Field name='year' component={LabelAndInput} readOnly={readOnly} 
-                    type='number' label='Ano' cols='12 4' placeholder='Informe o Ano'/>
+                    type='number' label='Ano' cols='12 4' placeholder='Ano'/>
                     <Summary credit={sumOfCredits} debt={sumOfDebts}/>
                     <ItemList cols='12 6' list={credits} readOnly={readOnly}
                         field='credits' legend='Créditos'/>
