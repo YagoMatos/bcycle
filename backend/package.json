@@ -7,9 +7,25 @@
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name my-money-backend"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoMatos/bcycle"
+  },
+
+  "keywords": [
+    "billing cycle",
+    "react",
+    "redux",
+    "redux-form"
+  ],
+  
+  "author": "Yago Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoMatos/bcycle/issues"
+  },
+
   "dependencies": {
     "bcrypt": "^1.0.2",
     "body-parser": "^1.15.2",

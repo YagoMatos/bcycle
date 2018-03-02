@@ -7,9 +7,25 @@
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production":"webpack --progress -p"
   },
-  "keywords": [],
-  "author": "yago matos",
-  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoMatos/bcycle"
+  },
+
+  "keywords": [
+    "billing cycle",
+    "react",
+    "redux",
+    "redux-form"
+  ],
+  
+  "author": "Yago Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoMatos/bcycle/issues"
+  },
+
   "devDependencies": {
     "admin-lte": "2.3.6",
     "axios": "0.15.3",
