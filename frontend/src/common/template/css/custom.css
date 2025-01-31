@@ -1,181 +1,177 @@
-body{
-   font-family: "Montserrat", sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-wrapper {
-    min-height: 650px !important;
+  min-height: 650px !important;
 }
 
-.main-footer{
-    bottom: 0px;
-    width: 100%;
-    background: #a73511;
-    padding: 0.5em 10em 1px 1em;
-    color: #fff
+.main-footer {
+  bottom: 0px;
+  width: 100%;
+  background: #a73511;
+  padding: 0.5em 10em 1px 1em;
+  color: #fff;
 }
 
-button{
-    margin-left: 5px;
+button {
+  margin-left: 5px;
 }
 
-.btn{
-    border-radius: 5%;
-    outline: none !important;
+.btn {
+  border-radius: 5%;
+  outline: none !important;
 }
 
 .btn-default {
-    background-color: #fff;
-    color: #444;
-    border: 2px solid #444;
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #444;
 }
 
-
 .btn-primary {
-    background-color: #fff;
-    color: #03A9F4;
-    border: 2px solid #03A9F4;
+  background-color: #fff;
+  color: #03a9f4;
+  border: 2px solid #03a9f4;
 }
 
 .btn-danger {
-    background-color: #fff;
-    color: #dd4b39;
-    border: 2px solid #dd4b39;
+  background-color: #fff;
+  color: #dd4b39;
+  border: 2px solid #dd4b39;
 }
 
-
 .btn-warning {
-    background-color: #fff;
-    color: #f39d2d;
-    border: 2px solid #f39d2d;
+  background-color: #fff;
+  color: #f39d2d;
+  border: 2px solid #f39d2d;
 }
 
 .btn-success {
-    background-color: #fff;
-    color: #4ea94e;
-    border: 1.5px solid #4ea94e;
+  background-color: #fff;
+  color: #4ea94e;
+  border: 1.5px solid #4ea94e;
 }
 
-input.form-control{
-    border-color: transparent transparent #ccc transparent;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    padding: 6px 20px 6px 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    color: gray;
-    letter-spacing: 0.1rem;
-    -webkit-transition: border-color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out;
+input.form-control {
+  border-color: transparent transparent #ccc transparent;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 6px 20px 6px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 0.1rem;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .form-control:focus {
-    border-color: transparent transparent #03A9F4 transparent;
-    box-shadow: none;
+  border-color: transparent transparent #03a9f4 transparent;
+  box-shadow: none;
 }
 
 .cycle {
-    border-radius: 50% !important;
-    outline: none;
+  border-radius: 50% !important;
+  outline: none;
 }
 
-.tab-actions{
-    width: 150px;
+.tab-actions {
+  width: 150px;
 }
 
-.skin-blue .wrapper{
-    background-color: #212121 !important;
+.skin-blue .wrapper {
+  background-color: #212121 !important;
 }
 
 .skin-blue .main-header .navbar {
-    background-color: #fff;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-    
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
-.skin-blue .main-header .navbar .nav>li>a:hover,
-.skin-blue .main-header .navbar .nav .open>a,
-.skin-blue .main-header .navbar .nav>li>a:focus{
-    background-color: #2196F3 !important;
+.skin-blue .main-header .navbar .nav > li > a:hover,
+.skin-blue .main-header .navbar .nav .open > a,
+.skin-blue .main-header .navbar .nav > li > a:focus {
+  background-color: #2196f3 !important;
 }
 
-.nav-tabs-custom{
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+.nav-tabs-custom {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
-.content-wrapper{
-    background-color: #f4f3ef;
+.content-wrapper {
+  background-color: #f4f3ef;
 }
 
-.skin-blue .main-sidebar{
-    background-color: #212121;
-    background-size: cover;
-    background-position: center center;
-   
+.skin-blue .main-sidebar {
+  background-color: #212121;
+  background-size: cover;
+  background-position: center center;
 }
 
-.skin-blue .main-header .logo{
-    background-color: #212121;
+.skin-blue .main-header .logo {
+  background-color: #212121;
 }
 
-.skin-blue .main-header .navbar .nav>li>a {
-    color: #212121;
+.skin-blue .main-header .navbar .nav > li > a {
+  color: #212121;
 }
 
-.skin-blue .sidebar-menu>li>a {
-    border-left: none;
-    margin: 0.3em;
+.skin-blue .sidebar-menu > li > a {
+  border-left: none;
+  margin: 0.3em;
 }
 
 .skin-blue .sidebar a {
-    color: #fff;
+  color: #fff;
 }
 
-.skin-blue .treeview-menu>li>a {
-    color: #fff;
-    background-color: #347537;
+.skin-blue .treeview-menu > li > a {
+  color: #fff;
+  background-color: #347537;
 }
 
 .skin-blue .main-header .navbar .sidebar-toggle {
-    color: #ffffff;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    background-color: #212121;
+  color: #ffffff;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #212121;
 }
 
 .skin-blue .sidebar a:hover {
-    color: #4ea94e !important;
-    background-color: #212121 !important;
-
+  color: #4ea94e !important;
+  background-color: #212121 !important;
 }
 
 .skin-blue .main-header .logo:hover {
-    background-color: #212121;
+  background-color: #212121;
 }
 
-.skin-blue .sidebar-menu>li.active>a {
-    color: #4CAF50;
-    background-color: #498d4c;
+.skin-blue .sidebar-menu > li.active > a {
+  color: #4caf50;
+  background-color: #498d4c;
 }
 
-.skin-blue .sidebar-menu>li>.treeview-menu {
-    margin: 0 1px;
-    background-color: #498d4c;
+.skin-blue .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background-color: #498d4c;
 }
 
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-    background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
-.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
-    color: #57a75b;
-    background-color: #212121;
-    border-left-color: #212121;
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a {
+  color: #57a75b;
+  background-color: #212121;
+  border-left-color: #212121;
 }
 
 .skin-blue .main-header li.user-header {
-    background-color: #2196F3;
+  background-color: #2196f3;
 }
 
-.small-box{
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+.small-box {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
