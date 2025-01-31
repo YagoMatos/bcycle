@@ -9,13 +9,12 @@ import { reducer as toastrReducer } from 'react-redux-toastr'
 import AuthReducer from '../auth/authReducer'
 
 const rootReducer = combineReducers({
-    dashboard: DashboardReducer,
-    tab: TabReducer,
-    billingCycles: BillingCycles,
-    form: formReducer,
-    toastr: toastrReducer,
-    auth: AuthReducer
-
+  dashboard: DashboardReducer,
+  tab: TabReducer,
+  billingCycles: BillingCycles,
+  form: formReducer,
+  toastr: toastrReducer,
+  auth: AuthReducer
 })
 
 export default rootReducer

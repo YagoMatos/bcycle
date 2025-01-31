@@ -1,59 +1,60 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
-import { connect }  from 'react-redux'
+import { connect } from 'react-redux'
 
 import { getList, showUpdate, showDelete } from './billingCyclesActions'
 
 class BillingCyclesList extends Component {
-    
+  componentWillMount () {
+    this.props.getList()
+  }
 
-    componentWillMount(){
-        this.props.getList()
-    }
-    
-    renderRows(){
-        const list = this.props.list || []
-        return list.map(bc => (
-            <tr key={bc._id}>
-                <td>{bc.name}</td>
-                <td>{bc.month}</td>
-                <td>{bc.year}</td>
-                <td>
-                    <button className='btn btn-warning cycle' 
-                        onClick={() => this.props.showUpdate(bc)}>
-                        <i className='fa fa-pencil'></i>
-                    </button>
+  renderRows () {
+    const list = this.props.list || []
+    return list.map((bc) => (
+      <tr key={bc._id}>
+        <td>{bc.name}</td>
+        <td>{bc.month}</td>
+        <td>{bc.year}</td>
+        <td>
+          <button
+            className='btn btn-warning cycle'
+            onClick={() => this.props.showUpdate(bc)}
+          >
+            <i className='fa fa-pencil' />
+          </button>
 
-                    <button className='btn btn-danger cycle' 
-                        onClick={() => this.props.showDelete(bc)}>
-                        <i className='fa fa-trash-o'></i>
-                    </button> 
-                </td>
+          <button
+            className='btn btn-danger cycle'
+            onClick={() => this.props.showDelete(bc)}
+          >
+            <i className='fa fa-trash-o' />
+          </button>
+        </td>
+      </tr>
+    ))
+  }
+
+  render () {
+    return (
+      <div>
+        <table className='table table-striped'>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Mês</th>
+              <th>Ano</th>
+              <th className='tab-actions'>Ações</th>
             </tr>
-        ))
-    }
-
-    render(){
-        return (
-            <div>
-                <table className='table table-striped'>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Mês</th>
-                            <th>Ano</th>
-                            <th className='tab-actions'>Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.renderRows()}
-                    </tbody>
-                </table>
-            </div>
-        )
-    }
+          </thead>
+          <tbody>{this.renderRows()}</tbody>
+        </table>
+      </div>
+    )
+  }
 }
 
-const mapStateToProps = state => ({ list: state.billingCycles.list })
-const mapDispatchToProps = dispatch => bindActionCreators({getList, showUpdate, showDelete}, dispatch)
+const mapStateToProps = (state) => ({ list: state.billingCycles.list })
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ getList, showUpdate, showDelete }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCyclesList)

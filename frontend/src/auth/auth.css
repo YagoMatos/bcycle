@@ -4,37 +4,36 @@
   background: url("../common/images/back.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  overflow:visible!important;
+  overflow: visible !important;
 }
 
 .login-box-body {
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
 }
 
-.login-box-msg{
-  color: #2196F3;
+.login-box-msg {
+  color: #2196f3;
   font-size: 1.5em;
 }
 
-.login-logo{
+.login-logo {
   color: #fff;
 }
 
-.login-signup{
+.login-signup {
   display: flex;
   justify-content: center;
-
 }
 
-.row{
+.row {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 40px;
 }
 
@@ -43,17 +42,18 @@
 }
 
 .login-box button {
-    margin-left: 0px;
- }
-    
- .login-box a:hover {
-    cursor: pointer;
-}
-.content-wrapper{
-    min-height: 660px;
+  margin-left: 0px;
 }
 
-.login-box, .register-box {
+.login-box a:hover {
+  cursor: pointer;
+}
+.content-wrapper {
+  min-height: 660px;
+}
+
+.login-box,
+.register-box {
   width: 360px;
   margin: 7% auto auto;
 }
